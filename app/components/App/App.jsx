@@ -5,6 +5,7 @@ import AppActions from '../../actions/AppActions';
 import ItemsStore from '../../stores/ItemsStore';
 import Body from '../Body/Body';
 import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
 
 function getAppState() {
   return {
@@ -32,6 +33,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className={styles.app}>
+        <Header />
         <Body items={this.state.items} />
         <Footer />
       </div>
