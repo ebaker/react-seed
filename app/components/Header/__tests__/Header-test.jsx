@@ -1,15 +1,15 @@
 import React from 'react/addons';
-import Footer from '../Footer.jsx';
+import Header from '../Header.jsx';
 import { expect } from 'chai';
 
 let { TestUtils } = React.addons;
 
-describe('Footer', () => {
+describe('Header', () => {
   it('Should have the correct footer element', () => {
     let footer = TestUtils.renderIntoDocument(
-      <Footer />
+      <Header />
     );
-    let footerElem = React.findDOMNode(footer);
-    expect(footerElem.tagName.toLowerCase()).to.equal('footer');
+    let headerElem = React.findDOMNode(footer);
+    expect(headerElem ooterElem.tagName.toLowerCase()).to.equal('header');
   });
 });
